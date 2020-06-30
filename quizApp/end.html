@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="https://www.freepngimg.com/thumb/bulb/34138-7-idea-bulb-transparent.png" type="image/x-icon">
+    <title>Quiz-End</title>
+    <link rel="stylesheet" href="css/app.css">
+    <style>
+        .btn{
+            display: block;
+            padding:0.8rem;
+            margin:2rem;
+        }
+        #username{
+            display:block;
+            margin:auto;
+            width:23rem;
+            height: 4rem;
+            font-size: medium;
+            border:1.5px solid rgb(104, 2, 65);
+        }
+        #username:hover{
+            background: rgba(221, 230, 230, 0.822);
+            box-shadow:2px 2px 20px rgb(104, 2, 65);
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div id="end" class="flexcenter flexcolumn">
+            <h1 id="finalScore">
+                0
+            </h1>
+            <form >
+                <input type="text" name="username" id="username" placeholder="Username">
+                <br>
+                <button id="saveScoreBtn" class="btn" type="submit" onclick="saveHighScore(event)" disabled>Save</button>
+                <a class="btn" href="game.html">Play Again</a>
+                <a class="btn" href="index.html">Go Home</a>
+            </form>
+        </div>
+    </div>
+
+    <script src="java/end.js"></script>
+    <script src="java/game.js"></script>
+</body>
+</html>

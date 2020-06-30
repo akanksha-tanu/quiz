@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/app.css">
+    <link rel="stylesheet" href="css/game.css">
+    <link rel="shortcut icon" href="https://www.freepngimg.com/thumb/bulb/34138-7-idea-bulb-transparent.png" type="image/x-icon">
+    <title>Quiz-Play</title>
+</head>
+<body>
+
+    <div class="container">
+        <div id="load"></div>
+        <div id="game" class="flexcolumn hidden">
+            <div id="hed">
+
+                <div id="headitem">
+                    <p class="headprefix">
+                        Question: <span id="quescount"></span>
+                    </p>
+                    <div id="progressbar">
+                        <div id="progressbarfull">
+
+                        </div>
+                    </div>
+                </div>
+
+                <div id="headitem">
+                    <p class="headprefix">
+                        Score
+                    </p>
+                    <h1 class="headmain" id="score" >
+                        0
+                    </h1>
+                </div>
+
+            </div>
+            <h2 id="question"></h2>
+            <div class="choice">
+                <p class="choiceprefix">A</p>
+                <p class="choicetext" data-number="1"></p>
+            </div>
+            <div class="choice">
+                <p class="choiceprefix">B</p>
+                <p class="choicetext" data-number="2"></p>
+            </div>
+            <div class="choice">
+                <p class="choiceprefix">C</p>
+                <p class="choicetext" data-number="3"></p>
+            </div>
+            <div class="choice">
+                <p class="choiceprefix">D</p>
+                <p class="choicetext" data-number="4"></p>
+            </div>
+        </div>
+    </div>
+    
+    <script src="java/game.js"></script>
+</body>
+</html>
