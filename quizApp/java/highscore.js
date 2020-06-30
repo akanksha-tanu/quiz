@@ -27,15 +27,15 @@ var final=[];
 var n="";
 var sc=Number();
 var li=Array.from(document.querySelectorAll("li"));
-console.log(li);
+//console.log(li);
 for(var i=0;i<li.length;i++){
     var index=li[i].outerText.indexOf("-");
     n=li[i].outerText.slice(0,index-1);
     sc=li[i].outerText.slice(index+2,li[i].outerText.length);
-    console.log(n+sc);
+    //console.log(n+sc);
     final.push({score:sc,name:n});
 }
-console.log(final);
+//console.log(final);
 
 //retriving current scores in local storage
 for(var j=0;j<highScores.length;j++)
@@ -43,12 +43,12 @@ for(var j=0;j<highScores.length;j++)
     final.push(highScores[j]);
 }
 for(var z=0;z<final.length;z++)
-console.log(Number(final[z].score));
+//console.log(Number(final[z].score));
 
 final.sort((a,b) => b.score-a.score) ;
 final.splice(5);
 
-console.log(final);
+//console.log(final);
 
 
 
